@@ -1,77 +1,89 @@
-# Human-Action-Recognition
-Deep Learning-based Human Action Recognition using CNN and OpenCV
-Project Overview
-This project implements a Human Action Recognition system using deep learning techniques. It classifies human actions such as clapping, running, and other activities from images/videos. The system uses transfer learning with a MobileNetV2 backbone, enhanced by data augmentation and early stopping to improve model generalization.
+# Human Action Recognition System
 
-Features
-Data loading and preprocessing from structured folders.
+## Project Overview
 
-Use of MobileNetV2 pre-trained model for transfer learning.
+This project implements a Human Action Recognition (HAR) system that classifies human actions such as clapping, running, and more from images. It uses deep learning techniques with transfer learning leveraging MobileNetV2, data augmentation to increase model robustness, and early stopping to prevent overfitting.
 
-Data augmentation for improved variability and model robustness.
+The system is deployed as a Streamlit web app where users can upload images and get real-time action predictions.
 
-Dropout and early stopping to reduce overfitting.
+## Features
 
-Streamlit application for real-time image upload and action prediction.
+- Load and preprocess images from structured train/test folders.
+- Uses MobileNetV2 as a pre-trained feature extractor with custom classification layers.
+- Data augmentation applied to training images for better generalization.
+- Dropout layers and early stopping callbacks to reduce overfitting.
+- Streamlit app for user-friendly interaction.
 
-Dataset
-The dataset contains ~300 images per class, organized into 16 classes such as clapping, running, etc. Data is split into train and test folders for training and evaluation.
+## Dataset
 
-Installation
-Prerequisites:
-Python 3.8 or above
+The dataset contains approximately 300 images per class across 16 classes, split into train and test folders.
 
-Conda or pip for environment management
+## Installation
 
-Setup:
-bash
-# Clone repository
+### Prerequisites
+
+- Python 3.8 or higher
+- Conda or pip
+
+### Setup Instructions
+
+Clone the repo
 git clone <your-repo-url>
 cd <your-project-folder>
 
-# Create and activate virtual environment (using Conda)
+Create and activate environment
 conda create -n actionrecognition python=3.8 -y
 conda activate actionrecognition
 
-# Install dependencies
+Install dependencies
 pip install -r requirements.txt
-Running the Project
-Training Model
-Run your Jupyter notebook or Python script for training:
 
-bash
+## Usage
+
+### Train the Model
+
+Run the training notebook or script to train the model with augmentation and early stopping:
+
 python train_model.py
-Streamlit App
-To launch the web app for action recognition:
 
-bash
+
+### Run Streamlit App
+
+Launch the Streamlit app to test predictions on your images:
 streamlit run app.py
-Upload an image to get predicted human action results.
 
-Model Performance
-The model achieved modest accuracy due to limited dataset size.
+Upload images via the web interface to see predicted actions.
 
-Data augmentation, transfer learning, and early stopping were used to improve robustness.
+## Model Performance
 
-Expect gradual improvement with more data and fine-tuning.
+- Initial model training shows modest accuracy due to limited dataset size.
+- Use of transfer learning, augmentation, and early stopping helps improve performance.
+- Future improvements include dataset expansion, fine-tuning MobileNetV2, and experimenting with input sizes.
+Upload images via the web interface to see predicted actions.
 
-Future Work
-Increase dataset size with more diverse images.
+## Model Performance
 
-Fine-tune MobileNetV2 by unfreezing layers for better task adaptation.
+- Initial model training shows modest accuracy due to limited dataset size.
+- Use of transfer learning, augmentation, and early stopping helps improve performance.
+- Future improvements include dataset expansion, fine-tuning MobileNetV2, and experimenting with input sizes.
 
-Experiment with larger image input sizes (96x96 or 224x224).
+## Future Work
 
-Add more augmentation techniques.
+- Collect larger and more diverse datasets.
+- Fine-tune base model layers for better adaptation.
+- Increase input image resolution for stronger feature extraction.
+- Explore advanced architectures and multi-modal approaches.
 
-Explore alternative architectures and multimodal inputs.
+## Contributing
 
-Contributing
-Anyone is welcome to contribute improvements or report issues.
+Contributions, bug reports, and feature requests are welcome!
 
-License
+## License
+
 Specify your license here.
 
-Contact
-Your Name – your.email@example.com
-Project Link: <your-repo-url>
+## Contact
+
+Your Name – omyadao1706@gamil.com  
+Project Link: <>
+
