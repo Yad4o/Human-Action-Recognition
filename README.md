@@ -78,10 +78,6 @@ Upload images via the web interface to see predicted actions.
 
 Contributions, bug reports, and feature requests are welcome!
 
-## License
-
-Specify your license here.
-
 ## Contact
 
 Your Name – omyadao1706@gamil.com  
